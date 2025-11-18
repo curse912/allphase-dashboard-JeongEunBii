@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.state {
+  padding: 40px 16px;
+  color: #6c7a74;
+  font-size: 14px;
+}
