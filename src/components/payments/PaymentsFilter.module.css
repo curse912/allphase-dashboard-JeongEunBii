@@ -1,0 +1,196 @@
+.container {
+  padding: 16px 20px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filterRow {
+  display: grid;
+  grid-template-columns: 110px 1fr; 
+  min-height: 42px;
+}
+
+.rowLabel {
+  background-color: #5F88D5;
+  border-right: 1px solid #5F88D5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5f0ff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rowContent {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #5F88D5;
+}
+
+.filterRow:last-child .rowContent {
+  border-bottom: none;
+}
+
+.fieldGroupInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.fieldLabel {
+  color: #2C56A6;
+}
+
+.select,
+.dateInput {
+  min-width: 140px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid #E2E8F0;
+  background-color: #E2E8F0;
+  color: #000000;
+  font-size: 13px;
+  outline: none;
+}
+
+.select:focus,
+.dateInput:focus {
+  border-color: #3b82f6;
+}
+
+.customRange {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tilde {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.actionsInline {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.applyBtn {
+  padding: 6px 16px;
+  border-radius: 10px;
+  border: 1px solid #5F88D5;
+  background: #5F88D5;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.applyBtn:hover {
+  background: #1a4086;
+}
+
+
+@media (prefers-color-scheme: dark){
+  .container {
+    padding: 16px 20px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .filterRow {
+    display: grid;
+    grid-template-columns: 110px 1fr; 
+    min-height: 42px;
+  }
+
+  .rowLabel {
+    background-color: #24417B;
+    border-right: 1px solid #24417B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e5f0ff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .rowContent {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #24417B;
+  }
+
+  .filterRow:last-child .rowContent {
+    border-bottom: none;
+  }
+
+  .fieldGroupInline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .fieldLabel {
+    color: #9ca3af;
+  }
+
+  .select,
+  .dateInput {
+    min-width: 140px;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 7px;
+    border: 1px solid #24417B;
+    background-color: #24417B;
+    color: #e5e7eb;
+    font-size: 13px;
+    outline: none;
+  }
+
+  .select:focus,
+  .dateInput:focus {
+    border-color: #3b82f6;
+  }
+
+  .customRange {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .tilde {
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  .actionsInline {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .applyBtn {
+    padding: 6px 16px;
+    border-radius: 7px;
+    border: 1px solid #2f5bac;
+    background: #2f5bac;
+    color: #e5f0ff;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .applyBtn:hover {
+    background: #244583;
+  }
+}

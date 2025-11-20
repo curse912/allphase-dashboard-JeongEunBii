@@ -1,0 +1,140 @@
+/* AppLayout */
+.appLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F5F7FA;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.appMain {
+  /* flex: 1; */
+  min-width : 1000px;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  padding: 24px 32px;
+}
+
+.app-content {
+  flex: 1;
+  padding: 8px 0 24px;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 260px;
+  background-color: #2C56A6; 
+  padding: 32px 0 32px 24px;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLogoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 48px 0;
+}
+.logoImg {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebarLink {
+  display: block;
+  padding: 20px 16px 20px 0;
+  border-radius: 999px 0 0 999px;
+  color: #E7EFFC;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sidebarLink:hover {
+  background-color: #5073B5;
+  color : #F5F7FA;
+  font-weight: 900;
+}
+
+.active {
+  background-color: #F5F7FA;
+  color: #3A6DCC;
+  font-weight: 900; 
+}
+
+/* 헤더 */
+.header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.searchbar {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 5px solid #ABBBDB;
+}
+
+.searchIcon {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.searchbar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+
+@media (prefers-color-scheme: dark){
+  /* AppLayout */
+  .appLayout {
+    background-color: #1E293B;
+  }
+
+  /* 사이드바 */
+  .sidebar {
+    background-color: #0F172A;
+  }
+
+  .sidebarLink {
+    color: #325FCC;
+  }
+
+  .sidebarLink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color : #4C7FFF;
+  }
+
+  .active {
+    background-color: #1E293B;
+    color: #FFFFFF;
+  }
+
+  /* 헤더 */
+  .searchbar {
+    background-color: #0F172A;
+    border: 5px solid #1B305B;
+  }
+}
