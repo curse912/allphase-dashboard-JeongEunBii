@@ -1,0 +1,101 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead tr {
+  background-color: #5F88D5;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #5F88D5;
+}
+
+.table th {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #E7EFFC;
+}
+
+.empty {
+  padding: 16px 0;
+  text-align: center;
+  color: #798DB4;
+}
+
+.code {
+  font-family: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  font-size: 12px;
+}
+
+/* 상태 배지 */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.statusSuccess {
+  background-color: #e0f3e4;
+  color: #2c7a4b;
+}
+
+.statusFailed {
+  background-color: #fde4e4;
+  color: #c53030;
+}
+
+.statusCancelled {
+  background-color: #fef0d5;
+  color: #b7791f;
+}
+
+.statusPending {
+  background-color: #e6edf7;
+  color: #2b6cb0;
+}
+
+.statusDefault {
+  background-color: #edf2f7;
+  color: #4a5568;
+}
+
+@media (prefers-color-scheme: dark){
+  .table thead tr {
+    background-color: #1B305B;
+  }
+
+  .table th,
+  .table td {
+    border-bottom: 1px solid #1B305B;
+  }
+
+  .table th {
+    color: #ffffff;
+  }
+
+  .table tbody tr:hover {
+    background-color: #1D2E53;
+  }
+
+  .statusBadge {
+    opacity: 0.5;
+  }
+}

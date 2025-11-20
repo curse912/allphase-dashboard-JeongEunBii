@@ -1,0 +1,125 @@
+.headerRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+  color: #3D69B0;
+}
+@media (prefers-color-scheme: dark){
+  .title{
+    color: #6CA9FF;
+  }
+}
+.caption {
+  font-size: 12px;
+  color: #798DB4;
+}
+
+.empty {
+  padding: 32px 8px;
+  font-size: 13px;
+  color: #798DB4;
+  text-align: center;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead tr {
+  background-color: #5F88D5;
+  border-radius: 10px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #5F88D5;
+}
+
+.table th {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #E7EFFC;
+}
+
+.code {
+  font-family: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  font-size: 12px;
+}
+
+/* 상태 배지 */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.statusSuccess {
+  background-color: #e0f3e4;
+  color: #2c7a4b;
+}
+
+.statusFailed {
+  background-color: #fde4e4;
+  color: #c53030;
+}
+
+.statusCancelled {
+  background-color: #fef0d5;
+  color: #b7791f;
+}
+
+.statusPending {
+  background-color: #e6edf7;
+  color: #2b6cb0;
+}
+
+.statusDefault {
+  background-color: #edf2f7;
+  color: #4a5568;
+}
+
+
+@media (prefers-color-scheme: dark){
+  .table thead tr {
+    background-color: #29529D;
+  }
+
+  .table th,
+  .table td {
+    border-bottom: 1px solid #29529D;
+  }
+
+  .table th {
+    color: #ffffff;
+  }
+
+  .table tbody tr:hover {
+    background-color: #1D2E53;
+  }
+  .statusBadge {
+    opacity: 0.5;
+  }
+}

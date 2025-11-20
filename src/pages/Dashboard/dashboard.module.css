@@ -1,11 +1,51 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2px;
 }
 
 .state {
   padding: 40px 16px;
-  color: #6c7a74;
+  color: #798DB4;
   font-size: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.colHalf {
+  min-height: 320px;
+}
+
+.container {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 5px solid #ABBBDB;
+}
+
+.containerH {
+  min-height: 320px;
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border: 5px solid #ABBBDB;
+}
+
+@media (prefers-color-scheme: dark){
+
+  .container {
+    background-color: #0F172A;
+    border: 5px solid #1B305B;
+  }
+
+  .containerH {
+    background-color: #0F172A;
+    border: 5px solid #1B305B;
+  } 
 }

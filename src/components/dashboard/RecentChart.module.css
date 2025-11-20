@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 900;
+  color: #3D69B0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #798DB4;
+  margin-top: 2px;
+}
+
+.tabs {
+  display: inline-flex;
+  padding: 2px;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #798DB4;
+  cursor: pointer;
+}
+
+.tabActive {
+  background-color: #5F88D5;
+  color: #dce8ff;
+  font-weight: 600;
+}
+
+.empty {
+  padding: 32px 8px;
+  font-size: 13px;
+  color: #798DB4;
+  text-align: center;
+}
+
+.total {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #2C56A6;
+}
+
+.total span {
+  font-weight: 600;
+  color: #3A6DCC;
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 260px;
+  margin-top: 8px;
+}
+
+@media (prefers-color-scheme: dark){
+
+  .title{
+    color: #6CA9FF;
+  }
+  .subtitle {
+    color: #9aa7a0;
+  }
+
+  .tab {
+    color: #798DB4;
+  }
+
+  .tabActive {
+    background-color: #3D69B0;
+    color: #dce8ff;
+  }
+
+  .empty {
+    color: #798DB4;
+  }
+
+  .total {
+    color: #8DB3FF;
+  }
+
+  .total span {
+    color: #ffffff;
+  }
+}

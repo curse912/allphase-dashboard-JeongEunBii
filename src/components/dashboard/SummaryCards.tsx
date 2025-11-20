@@ -1,6 +1,6 @@
 import type React from "react";
 import { formatCurrencyKRW, formatPercent } from "../../utils/format";
-import style from './SummaryCatds.module.css';
+import style from './SummaryCards.module.css';
 
 export interface SummaryData{
     totalAmount : number;
@@ -41,18 +41,16 @@ const SummaryCards: React.FC<SummaryCardsProps> = ({ data }) => {
     ];
 
     return (
-        <section className={style.container}>
+        <section>
             <h2 className={style.title}>이달의 매출</h2>
             <div className={style.grid}>
                 {items.map((item) => (
-                <div key={item.label} className={style.card}>
-                    <div className={style.dot} />
-                    <div className={style.texts}>
-                    <span className={style.value}>{item.value}</span>
-                    <span className={style.label}>{item.label}</span>
-                    <span className={style.sub}>{item.sub}</span>
+                    <div key={item.label} className={style.card}>
+                        <div className={style.dot} />
+                        <span className={style.value}>{item.value}</span>
+                        <span className={style.label}>{item.label}</span>
+                        <span className={style.sub}>{item.sub}</span>
                     </div>
-                </div>
                 ))}
             </div>
         </section>
