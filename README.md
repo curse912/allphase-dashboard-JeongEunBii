@@ -27,15 +27,15 @@ npm install recharts
 npm install redux react-redux @reduxjs/toolkit
 npm install react-router-dom @tanstack/react-query axios
 npm install recharts
-
+```
 2. 실행
 ```
 npm run dev
-
+```
 3. 환경변수(.env)
 ```
 VITE_API_BASE_URL=https://recruit.paysbypays.com/api/v1
-
+```
 ---
 
 ## 4. 주요기능
