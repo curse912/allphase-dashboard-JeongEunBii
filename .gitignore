@@ -39,7 +39,6 @@ pnpm-debug.log*
 # .env
 # .env.*
 # !.env.example   
-# # 예시 파일은 커밋할 수도 있음
 
 # # 에디터/OS
 # .vscode/
