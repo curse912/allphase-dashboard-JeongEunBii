@@ -1,5 +1,4 @@
 // PaymentListRes
-// import type { PayTypeRes, StatusRes } from "./code";
 
 export interface PaymentListRes{
     paymentCode : string;

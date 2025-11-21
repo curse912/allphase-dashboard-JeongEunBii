@@ -19,7 +19,6 @@ const MerchantsPage = () => {
 
   const [selectedMchtCode, setSelectedMchtCode] = useState<string | null>(null);
 
-  // 리스트가 로딩 완료되면 첫 번째 가맹점 선택
   useEffect(() => {
     if (merchants.length > 0 && !selectedMchtCode) {
       setSelectedMchtCode(merchants[0].mchtCode);

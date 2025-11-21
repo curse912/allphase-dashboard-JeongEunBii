@@ -26,7 +26,6 @@ const getStatusLabel = (status: string) => {
 };
 
 const PaymentsTable: React.FC<PaymentsTableProps> = ({ rows }) => {
-  // 최신 순 정렬
   const sorted = [...rows].sort(
     (a, b) =>
       new Date(b.paymentAt).getTime() - new Date(a.paymentAt).getTime(),

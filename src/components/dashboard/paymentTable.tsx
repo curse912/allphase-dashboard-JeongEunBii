@@ -29,7 +29,6 @@ const getStatusLabel = (status: string) => {
 }
 
 const PaymentTable : React.FC<PaymentTableProps> = ({payments}) => {
-    // 결제일 기준 : 내림차순 정렬(10)
     const recent = [...payments].sort(
                         (a,b) =>  new Date(b.paymentAt).getTime() - new Date(a.paymentAt).getTime()
                     ).slice(0,10);
